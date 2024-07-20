@@ -1,6 +1,6 @@
 # Y2038
-humanity will face a significant software problem on 03:14:08 UTC on 19 January 2038.
-this piece of code can be used to test whether Y2038 bug exists on GNU/Linux system, and potential mitigations.
+humanity will face a significant software problem on 19 January 2038 03:14:08 UTC.
+this piece of code can be used to check whether the Y2038 bug exists on 32-bit GNU/Linux system.
 
 to my knowledge; up-to-date *BSD, macOS and Windows systems are not affected. 
 however, GNU/Linux userland binaries are still at risk due to glibc defaulting to 32-bits `time_t`.
