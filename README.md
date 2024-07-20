@@ -10,10 +10,10 @@ from wikipedia:
 ```
 The problem exists in systems which measure Unix time—the number of seconds elapsed 
 since the Unix epoch (00:00:00 UTC on 1 January 1970)—and store it in a signed 32-bit integer. 
-The data type is only capable of representing integers between −(231) and 231 − 1, 
-meaning the latest time that can be properly encoded is 231 − 1 seconds after epoch (03:14:07 UTC on 19 January 2038). 
+The data type is only capable of representing integers between −(2^31) and 2^31 − 1, 
+meaning the latest time that can be properly encoded is 2^31 − 1 seconds after epoch (03:14:07 UTC on 19 January 2038). 
 Attempting to increment to the following second (03:14:08) will cause the integer to overflow,
-setting its value to −(231) which systems will interpret as 231 seconds before epoch (20:45:52 UTC on 13 December 1901). 
+setting its value to −(2^31) which systems will interpret as 2^31 seconds before epoch (20:45:52 UTC on 13 December 1901). 
 The problem is similar in nature to the year 2000 problem, the difference being the Year 2000 problem had to do with base 10 numbers, 
 while the Year 2038 problem has to do with base 2 numbers. 
 ```
